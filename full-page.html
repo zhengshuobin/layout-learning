@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐藏</title>
+    <style>
+        .display {
+            display: none;
+        }
+
+        .test:hover .display {
+            display: block;
+        }
+
+        .div1 {
+            background-color: greenyellow;
+        }
+
+        .div2 {
+            display: none;
+            background-color: hotpink;
+        }
+
+        @media screen and (max-width: 500px) {
+            .div1 {
+                display: none;
+            }
+
+            .div2 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">asdf</div>
+    <div class="div2">asdf</div>
+    <div class="test" style="width: 200px; height: 200px; border: 1px solid red; position: relative;">
+        <div class="display"
+            style="width: 400px; height: 400px; background-color: gold; position: absolute; top: 0; right: -400px; ">
+        </div>
+    </div>
+</body>
+
+</html>
