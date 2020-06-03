@@ -1,53 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout-demo-2</title>
     <style>
         body,
-        p {
+        p,
+        ul,
+        li{
             padding: 0;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container{
+
+        .container {
             margin: auto;
             max-width: 1200px;
             min-width: 800px;
             width: 90%;
             box-sizing: border-box;
         }
-        .nav{
+
+        .nav {
             padding: 0 10px;
             font-size: 12px;
             color: white;
         }
-        .btn{
+
+        .btn {
             width: 100px;
             border-radius: 15px;
             border: none;
             padding: 5px 0;
             font-size: 12px;
         }
-        .container-div{
+
+        .container-div {
             width: 280px;
         }
-        .span-1{
+
+        .span-1 {
             font-size: 10px;
         }
-        .div-items{
-            flex:1;
+
+        .div-items {
+            flex: 1;
         }
-        .div-items>*{
+
+        .div-items>* {
             display: block;
             padding: 6px;
         }
-        </style>
+
+        .email-box {
+            box-shadow: 0 0 15px rgba(58, 71, 78, 0.2);
+        }
+
+        .email-box input {
+            padding: 12px 12px;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: white;
+            outline: none;
+        }
+        ul{
+            display: inline-block;
+        }
+        li{
+            list-style: none;
+            color: white;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+        .footer-rgiht ul li{
+            width: 250px;
+            text-align: left;
+        }
+        .footer-btm{
+            padding-right: 250px;
+        }
+        .footer-btm li{
+            display: inline-block;
+            padding: 0px;
+        }
+    </style>
 </head>
+
 <body>
     <div style="background-color: #5c49c5;">
-        <div class="container" >
+        <div class="container">
             <header style="height: 80px;display: flex; justify-content: flex-end;align-items: center;">
                 <div class="nav">首页</div>
                 <div class="nav">技术</div>
@@ -71,16 +114,17 @@
                 <div>
                     <img src="./bf8110180322424c7af695b282f09c76.png" style="width: 450px;">
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
     <div class="container">
         <div>
-            <video src="./190204084208765161.mp4" controls="controls"  style="width: 400px; height: 300px; outline:none;margin: 10px auto 80px; display: block;"></video>
+            <video src="./190204084208765161.mp4" controls="controls"
+                style="width: 400px; height: 300px; outline:none;margin: 10px auto 80px; display: block;"></video>
         </div>
     </div>
     <div class="container">
-        <div style="width: 65%; margin: auto;">
+        <div style="width: 70%; margin: auto;">
             <div style="display: flex; justify-content: space-between;">
                 <div class="container-div"><img src="./bf8110180322424c7af695b282f09c76.png" style="width: 100%;"></div>
                 <div class="container-div">
@@ -89,29 +133,33 @@
                     <p style="font-size: 12px;">科技思考德街萨克拉的健康拉萨的建立凯撒的健康拉萨的将卢卡到了萨克</p>
                     <p style="font-size: 12px;">科技思考德街萨克拉的健康拉萨的建立凯撒的健康拉萨的将卢卡斯将sss 看到了萨克</p>
                     <div style="padding: 40px 0;font-size: 12px;">
-                        <button class="btn" style="background-color: white;margin-right: 10px;border: 1px solid #3e3eea;color: #3e3eea; border-radius: 2px; width: 125px;">更多关于无领导者</button>
+                        <button class="btn"
+                            style="background-color: white;margin-right: 10px;border: 1px solid #3e3eea;color: #3e3eea; border-radius: 2px; width: 125px;">更多关于无领导者</button>
                         <a href="#" style="color: #369666;text-decoration: none;">让我们一起创造一些东西</a>
                     </div>
                 </div>
             </div>
-            <div style="padding:40px 0; display: flex; justify-content: space-between;">    
+            <div style="padding:40px 0; display: flex; justify-content: space-between;">
                 <div class="container-div" style="width:210px;">
                     <div style="display: flex;justify-content: flex-start;padding-bottom: 20px;">
-                        <div><img src="./bf8110180322424c7af695b282f09c76.png" style="width:40px;padding-right: 10px;"></div>
+                        <div><img src="./bf8110180322424c7af695b282f09c76.png" style="width:40px;padding-right: 10px;">
+                        </div>
                         <div>
                             <p style="font-weight: bold;">轻松管理你的工作</p>
                             <span class="span-1">用简单设计管理的另一个项目是我们所代表的</span>
                         </div>
                     </div>
                     <div style="display: flex;justify-content: flex-start;padding-bottom: 20px;">
-                        <div><img src="./bf8110180322424c7af695b282f09c76.png" style="width:40px;padding-right: 10px;"></div>
+                        <div><img src="./bf8110180322424c7af695b282f09c76.png" style="width:40px;padding-right: 10px;">
+                        </div>
                         <div>
                             <p style="font-weight: bold;">轻松管理你的工作</p>
                             <span class="span-1">用简单设计管理的另一个项目是我们所代表的呢～～</span>
                         </div>
                     </div>
                     <div style="display: flex;justify-content: flex-start;padding-bottom: 20px;">
-                        <div><img src="./bf8110180322424c7af695b282f09c76.png" style="width:40px;padding-right: 10px;"></div>
+                        <div><img src="./bf8110180322424c7af695b282f09c76.png" style="width:40px;padding-right: 10px;">
+                        </div>
                         <div>
                             <p style="font-weight: bold;">轻松管理你的工作</p>
                             <span class="span-1">用简单设计管理的另一个项目是我们所代</span>
@@ -123,15 +171,18 @@
                         <p style="font-weight: bold;">从应用程序开始比任何事情都容易干！</p>
                         <span class="span-1">三四岁的凯瑟琳的离开了的绿色拉链打开了萨迪克里了萨克拉的克拉克森的卡拉桑德里克第三</span>
                         <div style="padding: 40px 0;">
-                            <button class="btn" style="background-color: white;margin-right: 15px;border-radius: 15px;border: 1px solid #3e3eea;color:#3e3eea;"> 🏹开始</button>
+                            <button class="btn"
+                                style="background-color: white;margin-right: 15px;border-radius: 15px;border: 1px solid #3e3eea;color:#3e3eea;">
+                                🏹开始</button>
                             <button class="btn" style="background-color: #369666;color: honeydew;">请求演示</button>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
             <div style="text-align: center;width: 75%;margin:0 auto 40px;">
                 <H1>证明使得增加转换变得简单</H1>
-                <span style="font-size: 10px;">三计算机sdsdsdssdsdsd经典角色的哈哈哈哈活化石的撒谎的萨健康大奖赛科幻惊悚可活动家萨活动家阿圣诞节阿是大赛计划大赛计划第三</span>
+                <span
+                    style="font-size: 10px;">三计算机sdsdsdssdsdsd经典角色的哈哈哈哈活化石的撒谎的萨健康大奖赛科幻惊悚可活动家萨活动家阿圣诞节阿是大赛计划大赛计划第三</span>
             </div>
             <div>
                 <div style="display: flex;text-align: center;margin-bottom: 40px;">
@@ -203,14 +254,89 @@
             </div>
             <div style="padding: 100px 0; display: flex;">
                 <div style="flex: 1; width:0;">
-                    <span>三大赛大赛的诉讼第三的赛道赛道赛道赛道赛道赛道赛道赛道赛道赛道</span>
+                    <span
+                        style="font-size: 12px;padding:0 40px 80px;display: inline-block;position: relative;text-align: center;">
+                        赛大赛的的大陆科技浪尖弗兰克的将，阿弗兰克,的解放了的塑料开发第三节离开房间斯大。林开发健康的四分律的三角方块道路旅客诉讼第三的赛道赛道赛道赛道赛道赛道赛道赛道赛道赛道。
+                        <div style="position: absolute;right: 50px; bottom: 0px;display: flex;">
+                            <div>
+                                <img src="/bf8110180322424c7af695b282f09c76.png" alt="图片" style="width: 40px;">
+                            </div>
+                            <div style="width: 50px;margin-left: 10px;">
+                                <span style="display: inline-block;padding-bottom: 5px;font-weight: bold;">千库网</span>
+                                <span style="color:#369666;">@125631</span>
+                            </div>
+                        </div>
+                    </span>
                 </div>
-                <div style="flex: 1; width:0; ">
-                    <div style="padding: 0 80px 50px;">一些来自我们呢快乐的华语客户“微笑”</div>
+                <div style="flex: 1;">
+                    <div style="padding: 0 80px 50px;">
+                        <span style="font-weight: bold; display: block;line-height: 1.5em;margin-bottom: 5px;">一些来自我们呢快乐的华语客户“微笑”</span>
+                        <span style="font-size: 12px;">大家好我较正说宾，谢谢大家能够来支持我，再次表示感谢！</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
-    </div>    
-</body>
+        <div style="margin: auto;width:80%;display: flex; justify-content: space-between;padding-bottom: 100px;">
+            <div>
+                <p style="font-weight: bold;font-size: 20px;">准备好开始了吗？</p>
+                <span style="font-size: 12px;">找一个OKR专家指导演示。</span>
+            </div>
+            <div class="email-box">
+                <input type="text" name="电子邮件地址" id="" placeholder="电子邮件地址" style="width: 250px;border: none;">
+                <input type="button" value="开始" style="border: none;">
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #5c49c5; padding: 80px 0 40px  0;">
+        <div class="container" style="display: flex;">
+            <div style="flex:1" class="footer-left">
+                <ul>
+                    <li style="font-size: 20px; font-weight: bold; text-indent: 0.5em;">千库网</li>
+                    <li>
+                        <span style="display: block;">18933980984</span>
+                        18318858328
+                    </li>
+                    <li>534798430@qq.com</li>
+
+                </ul>
+            </div>
+            <div class="footer-rgiht" style="flex: 2; justify-content: flex-start;display: flex;">
+                <ul>
+                    <li>关于我们</li>
+                    <li>编辑部</li>
+                    <li>博客</li>
+                    <li>礼品卡</li>
+                    <li>我们</li>
+                    <li>我们</li>
+                    <li>我们</li>
+                </ul>
+                <ul>
+                    <li>博客</li>
+                    <li>博客</li>
+                    <li>博客</li>
+                    <li>博客</li>
+                    <li>博客</li>
+                </ul>
+                <ul>
+                    <li>和尕哈</li>
+                    <li>啦啦啦</li>
+                    <li>拉里</li>
+                    <li>的的的</li>
+                    <li>峨峨</li>
+                </ul>
+            </div>  
+        </div>
+        <div class="container" style="padding-top: 60px; display: flex; justify-content: space-between;color: thistle; font-size: 12px;">
+            <div>@2020 Zhengshuobin Inc</div>
+            <div>
+                <ul class="footer-btm">
+                    <li>隐私</li>
+                    <li>可达性</li>
+                    <li>条款</li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+</body>        
+
 </html>
